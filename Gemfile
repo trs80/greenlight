@@ -48,7 +48,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
-gem 'omniauth-bn-office365', git: 'https://github.com/blindsidenetworks/omniauth-bn-office365.git', tag: '0.1.0'
+gem 'omniauth-bn-office365', git: 'https://github.com/trs80/omniauth-bn-office365.git'
 gem 'omniauth-bn-launcher', git: 'https://github.com/blindsidenetworks/omniauth-bn-launcher.git', tag: '0.1.3'
 gem 'bn-ldap-authentication', git: 'https://github.com/blindsidenetworks/bn-ldap-authentication.git'
 gem 'net-ldap'
@@ -75,6 +75,7 @@ gem 'redcarpet'
 gem 'cancancan', '~> 2.0'
 
 group :production do
+  gem 'sqlite3', '~> 1.3.6'
   # Use a postgres database in production.
   gem 'pg', '~> 0.18'
   gem 'sequel'
