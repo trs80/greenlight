@@ -113,7 +113,7 @@ class UsersController < ApplicationController
 
       render :change_password
     else
-      if @user.update_attributes(user_params.except(:name))
+      if @user.update_attributes(user_params.except(:name, :image))
         @user.update_attributes(email_verified: false) if user_params[:email] != @user.email
 
         user_locale(@user)
