@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4.3'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
@@ -43,6 +43,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+gem 'sprockets', '< 4.0.0'
 
 # Authentication.
 gem 'omniauth'
@@ -131,4 +133,4 @@ gem 'random_password'
 # Adds helpers for the Google reCAPTCHA API
 gem "recaptcha"
 
-gem 'i18n-language-mapping', '~> 0.1.0'
+gem 'i18n-language-mapping', '~> 0.1.1'
